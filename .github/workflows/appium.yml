@@ -24,6 +24,7 @@ jobs:
 
     - name: Install dependencies
       run: |
+          pip install appium-python-client
 
     - name: run behave file
       run: |

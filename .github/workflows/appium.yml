@@ -27,4 +27,5 @@ jobs:
 
     - name: run behave file
       run: |
+          cd Appium
           python Appium.py

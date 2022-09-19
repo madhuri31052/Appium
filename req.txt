@@ -1,0 +1,10 @@
+Appium-Python-Client                  
+behave                
+certifi               
+cffi                 
+chromedriver                      
+pytest              
+pytest-ordering      
+pytest-rerunfailures                  
+selenium               
+webdriver-manager 

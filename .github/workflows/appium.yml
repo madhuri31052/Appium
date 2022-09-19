@@ -24,12 +24,8 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install -U urllib3 requests
-        pip install selenium
-        pip install chromedriver
-        pip install webdriver-manager
-          pip install appium-python-client
-
+        pip install -r req.txt
+        
     - name: run behave file
       run: |
           cd Appium

@@ -29,7 +29,6 @@ jobs:
         pip install chromedriver
         pip install webdriver-manager
         pip install appium-python-client
-        pip install appium
         
 
     - name: run behave file

@@ -24,19 +24,9 @@ jobs:
 
     - name: Install dependencies
       run: |
-<<<<<<< HEAD
         pip install -r req.txt
-        
-=======
-       
-        pip install selenium
-        pip install chromedriver
-        pip install webdriver-manager
-        pip install appium-python-client
-        
 
->>>>>>> a13dab1a2297d3db7869aaa725330c1ad86e3a71
-    - name: run behave file
+    - name: run script file
       run: |
           cd Appium
           python Appium.py

@@ -18,7 +18,7 @@ dep_caps = {
     "appium:automationName": "UiAutomator2"
 }
 
-driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", dep_caps)
+driver = webdriver.Remote("http://127.0.0.1:4722/wd/hub", dep_caps)
 time.sleep(8)
 
 action = ActionChains(driver)

@@ -5,8 +5,8 @@ from selenium.webdriver import ActionChains
 from selenium.webdriver.common.actions import interaction
 from selenium.webdriver.common.actions.action_builder import ActionBuilder
 from selenium.webdriver.common.actions.pointer_input import PointerInput
-import os
-os.system("start /B start cmd.exe @cmd /k appium")
+# import os
+# os.system("start /B start cmd.exe @cmd /k appium")
 
 dep_caps = {
     "appium:deviceName": "sdk_gphone_x86",
@@ -55,6 +55,6 @@ time.sleep(2)
 
 driver.quit()
 
-os.system("taskkill /F /IM cmd.exe")
+# os.system("taskkill /F /IM cmd.exe")
 
 print("Successful")

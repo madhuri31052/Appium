@@ -28,5 +28,5 @@ jobs:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: true
         run: |
           cd Appium
-          python BSAppium.py
+          py.test -v -s test_BSAppium.py
     

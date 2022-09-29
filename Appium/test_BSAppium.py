@@ -35,7 +35,7 @@ driver = webdriver.Remote(
 )
 
 
-def clickHamburgerSign():
+def test_clickHamburgerSign():
     # Tap hamburger sign
     search_element1 = WebDriverWait(driver, 30).until(
         EC.element_to_be_clickable((MobileBy.ID,
@@ -47,16 +47,14 @@ def clickHamburgerSign():
 print("Clicked on hamburger sign")
 
 
-def clickDiagnosticsTab():
+def test_clickDiagnosticsTab():
     # Click on diagnostics button
     search_element2 = WebDriverWait(driver, 30).until(
         EC.element_to_be_clickable((MobileBy.ID,
                                     "com.strongarmtech.dockv5app:id/sidebarDiagnosticsBtn"))
     )
     search_element2.click()
-
-
-print("Clicked on diagnostics Tab")
+    print("Clicked on diagnostics Tab")
 
 
 # Invoke driver.quit() after the test is done to indicate that the test is completed.

@@ -31,6 +31,8 @@ driver = webdriver.Remote(
     desired_capabilities=desired_cap
 )
 
+print("Entered")
+
 # Tap hamburger sign
 search_element1 = WebDriverWait(driver, 30).until(
     EC.element_to_be_clickable((MobileBy.ID, 

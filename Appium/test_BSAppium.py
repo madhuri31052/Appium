@@ -4,10 +4,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import os
 import pytest
-import time
-from selenium.webdriver.common.actions import interaction
-from selenium.webdriver.common.actions.action_builder import ActionBuilder
-from selenium.webdriver.common.actions.pointer_input import PointerInput
+# import time
+# from selenium.webdriver.common.actions import interaction
+# from selenium.webdriver.common.actions.action_builder import ActionBuilder
+# from selenium.webdriver.common.actions.pointer_input import PointerInput
   
 # user = os.environ.get("BROWSERSTACK_USER")
 # key = os.environ.get("BROWSERSTACK_KEY")
@@ -82,19 +82,19 @@ def test_fewIcons():
     )
     search_element2.click()
     
-    actions = ActionBuilder(driver, mouse=PointerInput(interaction.POINTER_TOUCH, "touch"))
-    gesture = actions.pointer_action
+    # actions = ActionBuilder(driver, mouse=PointerInput(interaction.POINTER_TOUCH, "touch"))
+    # gesture = actions.pointer_action
 
 
-    # Long press on "Enter Full Name"
-    gesture.move_to_location(60, 860).pointer_down().pause(3).release()
-    actions.perform()
-    time.sleep(2)
+    # # Long press on "Enter Full Name"
+    # gesture.move_to_location(60, 860).pointer_down().pause(3).release()
+    # actions.perform()
+    # time.sleep(2)
 
-    # Paste the copied Name
-    gesture.move_to_location(50, 790).pointer_down().pause(0.1).release()
-    actions.perform()
-    time.sleep(2)
+    # # Paste the copied Name
+    # gesture.move_to_location(50, 790).pointer_down().pause(0.1).release()
+    # actions.perform()
+    # time.sleep(2)
   
     # Invoke driver.quit() after the test is done to indicate that the test is completed.
     driver.quit()

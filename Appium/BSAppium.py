@@ -16,7 +16,7 @@ desired_cap = {
   
     # Specify device and os_version for testing
     "device" : "Google Pixel 4",
-    "os_version" : "10.0",
+    "os_version" : "11.0",
       
     # Set other BrowserStack capabilities
     "project" : "dock test", 
@@ -47,12 +47,12 @@ search_element2 = WebDriverWait(driver, 30).until(
  )
 search_element2.click()
 
-# Click on Next button
-search_element3 = WebDriverWait(driver, 30).until(
-    EC.element_to_be_clickable((MobileBy.ID, 
- "com.strongarmtech.dockv5app:id/next"))
- )
-search_element3.click()
+# # Click on Next button
+# search_element3 = WebDriverWait(driver, 30).until(
+#     EC.element_to_be_clickable((MobileBy.ID, 
+#  "com.strongarmtech.dockv5app:id/next"))
+#  )
+# search_element3.click()
 
 
 #com.strongarmtech.dockv5app:id/dns_test_message

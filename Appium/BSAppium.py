@@ -15,8 +15,8 @@ desired_cap = {
     "app" : "bs://b564466666387a44affcd8f6f4acd61a265f3880",
   
     # Specify device and os_version for testing
-    "device" : "Google Pixel 5",
-    "os_version" : "11.0",
+    "device" : "Google Pixel 3",
+    "os_version" : "10.0",
       
     # Set other BrowserStack capabilities
     "project" : "dock test", 

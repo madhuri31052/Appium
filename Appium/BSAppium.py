@@ -4,6 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import os
   
+  
 user = os.environ.get("BROWSERSTACK_USER")
 key = os.environ.get("BROWSERSTACK_KEY")
 

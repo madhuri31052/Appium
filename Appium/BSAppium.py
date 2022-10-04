@@ -33,19 +33,42 @@ driver = webdriver.Remote(
 
 print("Entered")
 
-# Tap hamburger sign
+# Click on Next button
 search_element1 = WebDriverWait(driver, 30).until(
     EC.element_to_be_clickable((MobileBy.ID, 
-"com.strongarmtech.dockv5app:id/menuIcon"))
-)
+ "com.strongarmtech.dockv5app:id/nextButton"))
+ )
 search_element1.click()
 
-# Click on diagnostics button
+# Click on Begin button
 search_element2 = WebDriverWait(driver, 30).until(
     EC.element_to_be_clickable((MobileBy.ID, 
-"com.strongarmtech.dockv5app:id/sidebarDiagnosticsBtn"))
-)
+ "com.strongarmtech.dockv5app:id/nextButton"))
+ )
 search_element2.click()
+
+# Click on Next button
+search_element3 = WebDriverWait(driver, 30).until(
+    EC.element_to_be_clickable((MobileBy.ID, 
+ "com.strongarmtech.dockv5app:id/next"))
+ )
+search_element3.click()
+
+
+#com.strongarmtech.dockv5app:id/dns_test_message
+# # Tap hamburger sign
+# search_element1 = WebDriverWait(driver, 30).until(
+#     EC.element_to_be_clickable((MobileBy.ID, 
+# "com.strongarmtech.dockv5app:id/menuIcon"))
+# )
+# search_element1.click()
+
+# # Click on diagnostics button
+# search_element2 = WebDriverWait(driver, 30).until(
+#     EC.element_to_be_clickable((MobileBy.ID, 
+# "com.strongarmtech.dockv5app:id/sidebarDiagnosticsBtn"))
+# )
+# search_element2.click()
   
 # Invoke driver.quit() after the test is done to indicate that the test is completed.
 driver.quit()
